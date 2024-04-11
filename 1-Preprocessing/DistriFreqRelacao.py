@@ -18,7 +18,7 @@ def main():
     if TipoAtrib == 'C':
 
         dfResultado = df[df['Resultado'] == 0]
-        SepClasses = pd.cut(dfResultado['TesteEstresse'], bins=QntClasse)
+        SepClasses = pd.cut(dfResultado['ResEletroCardio'], bins=QntClasse)
 
         FreqAbs = SepClasses.value_counts().sort_index()
 

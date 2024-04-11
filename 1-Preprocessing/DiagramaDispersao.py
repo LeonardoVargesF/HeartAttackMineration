@@ -14,10 +14,10 @@ def main():
 
     # Plotando o gráfico de dispersão
     plt.figure(figsize=(8, 6))
-    plt.scatter(df['Declive'], df['PicoAnterior'])
-    plt.title("Gráfico de Dispersão: Pulso vs. Idade")
-    plt.xlabel("Pulso")
-    plt.ylabel("Idade")
+    plt.scatter(df['Resultado'], df['FreqCardioMax'])
+    plt.title("Gráfico de Dispersão: Resultado vs. FreqCardioMax")
+    plt.xlabel("Resultado")
+    plt.ylabel("Frequência Cardíaca Máxima")
     plt.grid(True)
     plt.show()
 
